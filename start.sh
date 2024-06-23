@@ -1,3 +1,3 @@
 #!/bin/bash
 
-nohup ~/TicTacToe_Server/server &
+nohup /home/ubuntu/TicTacToe_Server/server &

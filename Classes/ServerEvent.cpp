@@ -6,7 +6,7 @@
 /*   By: AliceInNov <alice@alicenov.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 22:28:49 by AliceInNov        #+#    #+#             */
-/*   Updated: 2024/06/20 04:53:43 by AliceInNov       ###   ########seoul.kr  */
+/*   Updated: 2024/06/23 19:14:12 by AliceInNov       ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,9 +103,6 @@ void Server::EventHandler(t_User* user)
 			return;
 
 		case MT_ROOM_CREATED:
-			return;
-
-		case MT_GMAE_START:
 			return;
 
 		case MT_GAME_RESULT:
