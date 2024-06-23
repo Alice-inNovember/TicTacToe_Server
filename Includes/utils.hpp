@@ -6,7 +6,7 @@
 /*   By: AliceInNov <alice@alicenov.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/11 20:31:14 by AliceInNov        #+#    #+#             */
-/*   Updated: 2024/06/20 04:12:16 by AliceInNov       ###   ########seoul.kr  */
+/*   Updated: 2024/06/23 18:50:32 by AliceInNov       ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,8 +108,6 @@ inline std::string MessageTypeName(int messageType)
 			return std::string("MT_MESSEGE");
 		case MT_SET_NAME:
 			return std::string("MT_SET_NAME");
-		case MT_GMAE_START:
-			return std::string("MT_GMAE_START");
 		case MT_MATCHQ_JOIN:
 			return std::string("MT_MATCHQ_JOIN");
 		case MT_ACTIVE_USER:
