@@ -1,0 +1,52 @@
+[1;32mSERVER : Init Server Socket[0m
+
+[1;32mSERVER : Init Server Epoll[0m
+
+[1;32mSERVER : Started Successfully[0m
+
+[1;34mUSER : New User Connected[0m
+
+[1;34mUSER : Connected Success[0m
+
+[0mUser Name Set : s[0m
+
+[0mUSER : UserDelete[0m
+
+[1;34mEventHandler : EventHandler : User Disconnected[0m
+
+[1;34mUSER : New User Connected[0m
+
+[1;34mUSER : Connected Success[0m
+
+[1;34mEventHandler ELSE : MT_UNKOWN[0m
+
+[1;34mEventHandler ELSE : MT_UNKOWN[0m
+
+[0mUSER : UserDelete[0m
+
+[1;34mEventHandler : EventHandler : User Disconnected[0m
+
+[1;34mUSER : New User Connected[0m
+
+[1;34mUSER : Connected Success[0m
+
+[1;34mEventHandler ELSE : MT_UNKOWN[0m
+
+[1;34mEventHandler ELSE : MT_UNKOWN[0m
+
+[0mUSER : UserDelete[0m
+
+[1;34mEventHandler : EventHandler : User Disconnected[0m
+
+[1;34mUSER : New User Connected[0m
+
+[1;34mUSER : Connected Success[0m
+
+[0mUser Name Set : Junseo[0m
+
+[1;32mSERVER : Init Server Socket[0m
+
+[1;32mSERVER : Init Server Epoll[0m
+
+[1;32mSERVER : Started Successfully[0m
+
