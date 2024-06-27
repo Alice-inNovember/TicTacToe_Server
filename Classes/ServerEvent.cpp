@@ -6,7 +6,7 @@
 /*   By: AliceInNov <alice@alicenov.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 22:28:49 by AliceInNov        #+#    #+#             */
-/*   Updated: 2024/06/23 19:14:12 by AliceInNov       ###   ########seoul.kr  */
+/*   Updated: 2024/06/27 22:13:51 by AliceInNov       ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,36 +80,28 @@ void Server::EventHandler(t_User* user)
 	switch (messageType) {
 		case MT_NOTING:
 			return;
-
 		case MT_MATCHQ_JOIN:
 			MatchQueueJoin(user->userID);
 			return;
-
 		case MT_SET_NAME:
 			PrintText(std::string("User Name Set : ") + messageArg.data);
 			messageArg.data[17] = 0;
 			user->name = messageArg.data;
 			return;
-
 		case MT_MESSEGE:
 			ForwardMessage(user->userID, messageType, messageArg);
 			return;
-
 		case MT_ACTIVE_USER:
 			t_Arg arg;
 			memset(arg.data, 0, MSG_ARG_SIZE);
 			strncat(arg.data, std::to_string(_userMap.size()).c_str(), MSG_ARG_SIZE);
 			SendMessage(user->userID, MT_ACTIVE_USER, arg);
 			return;
-
 		case MT_ROOM_CREATED:
 			return;
-
 		case MT_GAME_RESULT:
-			ForwardMessage(user->userID, messageType, messageArg);
 			RoomDelete(user->userID);
 			return;
-
 		case MT_USER_ACTION:
 			ForwardMessage(user->userID, messageType, messageArg);
 			return;
